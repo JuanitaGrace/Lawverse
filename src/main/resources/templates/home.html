@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Learning App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EDE1D5;
+            color: #5A2D0C;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .quote-box {
+            background: linear-gradient(to right, #916349, #3E2217);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .search-bar {
+            width: 95%;
+            padding: 10px;
+            border-radius: 10px;
+            border:1px solid #8B5D33;
+            margin: 10px 0;
+        }
+        .challenge-box {
+            background: linear-gradient(to right, #D0A176, #834828);            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .daily-task, .continue {
+            background-color: #8B5D33;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px;
+        }
+        .progress-bar {
+            width: 90%;
+            height: 10px;
+            background-color: #E6C8A0;
+            border-radius: 5px;
+            margin: 10px auto;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            background-color: #5A2D0C;
+        }
+        .domains button, .hero-card {
+            background-color: #8B5D33;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            margin: 5px;
+            display: inline-block;
+        }
+        .bottom-nav {
+            background-color: #5A2D0C;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .bottom-nav button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="position:absolute; left: 30px">Salute Jennica</h2>
+        <br><br><br>
+        <div class="quote-box">"Justice delayed is justice denied." - William E. Gladstone</div>
+        <input type="text" class="search-bar" placeholder="Search">
+        <div class="challenge-box">
+            <p>Challenge yourself!</p>
+            <button class="daily-task">Daily Task</button>
+            <p>Medicinal Malpractice Law</p>
+            <div class="progress-bar"><div class="progress" style="width: 74%;"></div></div>
+            <button class="continue">Continue</button>
+        </div>
+        <div class="level-box">Level 3</div>
+        <h3>Domains</h3>
+        <div class="domains">
+            <button>Criminal law</button>
+            <button>Civil law</button>
+            <button>Family law</button>
+            <button>Corporate law</button>
+            <button>Administrative law</button>
+            <button>Constitutional law</button>
+        </div>
+        <h3>Heroes of the Law</h3>
+        <div class="heroes">
+            <div class="hero-card">
+                <img src="law_img1.jpg">
+                Name Description
+            </div>
+            <div class="hero-card">Name Description</div>
+            <div class="hero-card">Name Description</div>
+        </div>
+        <div class="bottom-nav">
+            <button>Home</button>
+            <button>Forum</button>
+            <button>My Learning</button>
+            <button>Dashboard</button>
+        </div>
+    </div>
+</body>
+</html>
