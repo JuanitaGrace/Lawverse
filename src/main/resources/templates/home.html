@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Law Learning App</title>
     <style>
-        body {
+        body, html {
             font-family: Arial, sans-serif;
             background-color: #EDE1D5;
             color: #5A2D0C;
             margin: 0;
             padding: 0;
             text-align: center;
+        }
+        
+        h3{
+            text-align: left;
         }
         .container {
             padding: 20px;
@@ -31,14 +35,17 @@
             margin: 10px 0;
         }
         .challenge-box {
-            background: linear-gradient(to right, #D0A176, #834828);            padding: 15px;
+            background: linear-gradient(to right, #D0A176, #834828);            
+            padding: 15px;
+            color: white;
             border-radius: 10px;
             margin: 10px 0;
         }
         .daily-task, .continue {
-            background-color: #8B5D33;
-            color: white;
+            background-color: #DEB893;
+            color: #402418;
             border: none;
+            width: 90%;
             padding: 10px;
             border-radius: 10px;
             margin: 5px;
@@ -55,7 +62,7 @@
             height: 100%;
             background-color: #5A2D0C;
         }
-        .domains button, .hero-card {
+        .domains button {
             background-color: #8B5D33;
             color: white;
             padding: 10px;
@@ -64,9 +71,47 @@
             margin: 5px;
             display: inline-block;
         }
+        .heroes{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* Space between the cards */
+            margin: 20px;
+        }
+        .hero-card{
+            background-color: #8B5D33;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            margin: 5px;
+            display: inline-block;
+            width: 30%;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .hero-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* .hero-card h6 {
+            font-size: 1.5em;
+            margin: 15px 0;
+        } */
+
+        .hero-card p {
+            font-size: 12px;
+            color: white;
+        }
+
         .bottom-nav {
             background-color: #5A2D0C;
-            color: white;
+            color: #F1CBA5;
             padding: 10px;
             position: fixed;
             width: 100%;
@@ -74,6 +119,8 @@
             display: flex;
             justify-content: space-around;
         }
+        
+
         .bottom-nav button {
             background: none;
             border: none;
@@ -95,7 +142,7 @@
             <div class="progress-bar"><div class="progress" style="width: 74%;"></div></div>
             <button class="continue">Continue</button>
         </div>
-        <div class="level-box">Level 3</div>
+        <!-- <div class="level-box">Level 3</div> -->
         <h3>Domains</h3>
         <div class="domains">
             <button>Criminal law</button>
@@ -109,17 +156,30 @@
         <div class="heroes">
             <div class="hero-card">
                 <img src="law_img1.jpg">
-                Name Description
+                <p><b>Dr. B.R. Ambedkar</b></p>
+                <p>Architect of the Indian Constitution, he fought for Dalit rights and shaped India’s legal framework.</p>           
             </div>
-            <div class="hero-card">Name Description</div>
-            <div class="hero-card">Name Description</div>
+
+            <div class="hero-card">
+                <img src="law_img1.jpg">
+                <p><b>Sardar Vallabhbhai Patel</b></p>
+                <p>Key figure in integrating princely states into India and establishing law and order post-independence.</p>
+            </div>
+
+            <div class="hero-card">
+                <img src="law_img1.jpg">
+                <p><b>Justice P.N. Bhagwati</b></p>
+                <p>Former Chief Justice, known for pioneering Public Interest Litigation (PIL), making justice accessible to all.</p>
+            </div>
+    
         </div>
-        <div class="bottom-nav">
-            <button>Home</button>
-            <button>Forum</button>
-            <button>My Learning</button>
-            <button>Dashboard</button>
-        </div>
+        
+    </div>
+    <div class="bottom-nav">
+        <button>Home</button>
+        <button>Forum</button>
+        <button>My Learning</button>
+        <button>Dashboard</button>
     </div>
 </body>
 </html>
