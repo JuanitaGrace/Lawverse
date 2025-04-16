@@ -11,9 +11,10 @@ pool:
 
 steps:
 - task: Maven@4
+  displayName: 'Maven Build and Regression Test'
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'clean test'
+    goals: 'clean test' //changed this alone
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.21'
