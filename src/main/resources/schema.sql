@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS Demo;
+
+USE Demo;
+
+CREATE TABLE IF NOT EXISTS login (
+    username VARCHAR(50),
+    password VARCHAR(50)
+);
