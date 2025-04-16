@@ -6,8 +6,8 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+pool: 
+  name: FirstAgentPool
 
 steps:
 - task: Maven@4
@@ -19,4 +19,4 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package -DskipTests'
+    goals: 'package'
